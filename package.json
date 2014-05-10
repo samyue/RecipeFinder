@@ -1,0 +1,37 @@
+{
+  "name": "RecipeFinder",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/samyue/RecipeFinder",
+  "author": {
+    "name": "Yusong Yue",
+    "email": "samyue1975@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samyue/RecipeFinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samyue/RecipeFinder/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/samyue/RecipeFinder/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/RecipeFinder",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.4"
+  },
+  "keywords": []
+}
