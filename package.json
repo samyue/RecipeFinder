@@ -33,5 +33,12 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt": "~0.4.4"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "csv": "~0.3.7",
+    "jsonfile": "~1.1.1",
+    "moment": "~2.6.0",
+    "async": "~0.9.0"
+  }
 }

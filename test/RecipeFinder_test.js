@@ -29,8 +29,9 @@ exports['awesome'] = {
   },
   'no args': function(test) {
     test.expect(1);
+    
     // tests here
-    test.equal(RecipeFinder.awesome(), 'awesome', 'should be awesome.');
+    test.equal(RecipeFinder.run(), 'awesome', 'should be awesome.');
     test.done();
   },
 };
