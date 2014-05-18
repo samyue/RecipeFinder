@@ -1,3 +1,5 @@
+//Third party modules
+var util = require('util');
 //Application modules
 var recipeFinder = require('./lib/RecipeFinder');
 
@@ -10,10 +12,12 @@ if (process.argv.length < 4) {
 var recipesFilePath = process.argv[2];
 var fridgeFilePath = process.argv[3];
 
-var result = recipeFinder.run(recipesFilePath, fridgeFilePath);
-if (result) {
-    console.log('Found recipe:' ,util.inspect(result.recipe, {showHidden: true, depth: null})); 
-} else {
-    console.log('Order Takeout');
-    
-}
+recipeFinder.run(recipesFilePath, fridgeFilePath, function(err, result){
+    if (result) {
+        console.log('Found recipe:', util.inspect(result.recipe, {showHidden: true, depth: null})); 
+    } else {
+        console.log('Order Takeout');
+        
+    }
+
+});

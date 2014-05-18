@@ -28,7 +28,7 @@ exports['awesome'] = {
     done();
   },
   'testcase1': function(test) {
-    test.expect(2);
+    test.expect(3);
     
     // tests here
     RecipeFinder.run('test-data/testcase1/recipes.json', 
@@ -36,13 +36,14 @@ exports['awesome'] = {
       function(err, result) {
         test.equal(err, null, 'Should not have error.');
         test.ok(result, 'should have result');
+        test.equal(result.recipe.name, "grilled cheese on toast");
         test.done();
     });
     
    
   },
   'testcase2': function(test) {
-    test.expect(2);
+    test.expect(3);
     
     // tests here
     RecipeFinder.run('test-data/testcase2/recipes.json', 
@@ -50,6 +51,7 @@ exports['awesome'] = {
       function(err, result) {
         test.equal(err, null, 'Should not have error.');
         test.ok(result, 'should have result');
+        test.equal(result.recipe.name, "salad sandwich");
         test.done();
     });
   },

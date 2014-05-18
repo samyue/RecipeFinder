@@ -15,8 +15,14 @@ In root folder, run:
 You need to install node.js to run the application, and nodeunit to run the test.
 
 
-#Impementation and design details
-The main logic of Recipe Finder is encapsulated into module: lib/RecipeFinder.js. This ensures that most of the functions are testable and easier to re-use and maintain.
+#Impementation and design highlights
+The main logic of Recipe Finder is encapsulated into the module: lib/RecipeFinder.js. This ensures that most of the functions are testable and easier to re-use and maintain.
+
+The implementation tries to use as less global variables as prossible, so the code are decoupled.
+
+To manage the asyncronous functions and to avoid callback hell, I used async.js module to manage the workflow of parallel execution of I/O calls.
+
+The underscore.js module provides many nice and handy functional programming utilities to make the code succint.
 
 
 ## License
