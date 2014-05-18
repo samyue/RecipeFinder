@@ -28,17 +28,17 @@ to run the automated tasks, you need to install grunt.
 
 #Impementation and design highlights
 
-* The main logic of Recipe Finder is encapsulated into the module: lib/RecipeFinder.js. This ensures that most of the functions are testable and easier to re-use and maintain.
+* The main logic of Recipe Finder is encapsulated into the module: lib/RecipeFinder.js. This ensures that most of the functions are testable and easy to re-use and maintain.
 
-* The implementation tries to use as less global variables as prossible, so the code are decoupled.
+* The implementation tries to use as less global variables as prossible, so the code are more decoupled and cleaner.
 
 * The asyncronous way of loading files will make the program faster and more scalable for future extensions.
 
-* To manage the asyncronous functions and to avoid callback hell, I used async.js module to manage the workflow of parallel execution of I/O calls.
+* To manage the asyncronous functions and to avoid callback hell, the progrem uses async.js module to manage the workflow of parallel execution of I/O calls.
 
-* The underscore.js module provides many nice and handy functional programming utilities to make the code succint.
+* The underscore.js module provides many nice and handy functional programming utilities, which make the code succint.
 
-* The configured Grunt.js automates common tasks such as jshint, unit test and watch live code. This streamlined the development process.
+* The configured Grunt.js automates common tasks such as jshint, unit test and watch live code, which streamlines the development process.
 
 
 ## License
