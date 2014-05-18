@@ -12,6 +12,8 @@ if (process.argv.length < 4) {
 var recipesFilePath = process.argv[2];
 var fridgeFilePath = process.argv[3];
 
+//The run function of recipeFinder module will load data from the two files and return results
+// through the callback function.
 recipeFinder.run(recipesFilePath, fridgeFilePath, function(err, result){
     if (result) {
         console.log('Found recipe:', util.inspect(result.recipe, {showHidden: true, depth: null})); 
