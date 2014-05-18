@@ -27,11 +27,30 @@ exports['awesome'] = {
     // setup here
     done();
   },
-  'no args': function(test) {
-    test.expect(1);
+  'testcase1': function(test) {
+    test.expect(2);
     
     // tests here
-    test.equal(RecipeFinder.run(), 'awesome', 'should be awesome.');
-    test.done();
+    RecipeFinder.run('test-data/testcase1/recipes.json', 
+      'test-data/testcase1/fridge.csv', 
+      function(err, result) {
+        test.equal(err, null, 'Should not have error.');
+        test.ok(result, 'should have result');
+        test.done();
+    });
+    
+   
+  },
+  'testcase2': function(test) {
+    test.expect(2);
+    
+    // tests here
+    RecipeFinder.run('test-data/testcase2/recipes.json', 
+      'test-data/testcase2/fridge.csv', 
+      function(err, result) {
+        test.equal(err, null, 'Should not have error.');
+        test.ok(result, 'should have result');
+        test.done();
+    });
   },
 };

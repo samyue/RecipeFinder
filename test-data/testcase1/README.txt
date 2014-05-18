@@ -1,0 +1,1 @@
+This is a normal test case. 1 recipe should be found successfully.

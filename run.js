@@ -10,4 +10,10 @@ if (process.argv.length < 4) {
 var recipesFilePath = process.argv[2];
 var fridgeFilePath = process.argv[3];
 
-recipeFinder.run(recipesFilePath, fridgeFilePath);
+var result = recipeFinder.run(recipesFilePath, fridgeFilePath);
+if (result) {
+    console.log('Found recipe:' ,util.inspect(result.recipe, {showHidden: true, depth: null})); 
+} else {
+    console.log('Order Takeout');
+    
+}
