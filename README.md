@@ -3,18 +3,22 @@ This Recipe Finder application is based on node.js. It provides CLI command to l
 ## Getting Started
 
 In the root folder of the project, run:
-> % node run.js data/recipes.json data/fridge.csv 
+```
+% node run.js data/recipes.json data/fridge.csv 
+```
 
 
 ## Run test case
 In root folder, run:
-
-> % nodeunit test
+```
+% nodeunit test
+```
 
 ## Run automated grunt tasks, such as jshint and nodeunit test
 In root folder, run:
-
-> % grunt
+```
+% grunt
+```
 
 
 # Installation
