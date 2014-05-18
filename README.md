@@ -32,6 +32,8 @@ to run the automated tasks, you need to install grunt.
 
 * The implementation tries to use as less global variables as prossible, so the code are decoupled.
 
+* The asyncronous way of loading files will make the program faster and more scalable for future extensions.
+
 * To manage the asyncronous functions and to avoid callback hell, I used async.js module to manage the workflow of parallel execution of I/O calls.
 
 * The underscore.js module provides many nice and handy functional programming utilities to make the code succint.
